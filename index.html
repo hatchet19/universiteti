@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>უნივერსიტეტის ვებ საიტი</title>
+    <link rel="stylesheet" href= "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <!------ header section---->
+
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="about.html">ჩვენს შესახებ</a></li>
+                <li><a href="course.html">ბლოგი</a></li>
+                <li><a href="blog.html">კურსები</a></li>
+                <li><a href="contact.html">კონტაქტი</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <h1>ჩვენი გლობალური პარტნიორები</h1>
+    <p>სურვილის გარეშე სწავლა ამახინჯებს გონებას, მთავარია მონდომება და ყველაფერს მიაღწევ“.</p>
+    <a href="" class="hero-btn">გვეწვიეთ რომ შეიტყთ ჩვენზე მეტი</a>
+</div> 
+
+</section>  
+
+
+    <!---- course section-->
+
+
+    </div>
+
+</section>
+
+
+<!------- campus---------->
+
+
+<section class="campus">
+    <h1>ჩვენი გლობალური კამპუსები</h1>
+    
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/london.png">    
+            <div class="layer">
+                <h3>ლონდონი</h3>
+            </div> 
+        </div>
+        <div class="campus-col">
+            <img src="images/newyork.png">    
+            <div class="layer">
+                <h3>ნიუ ორკი</h3>
+            </div> 
+        </div>
+        <div class="campus-col">
+            <img src="images/washington.png">    
+            <div class="layer">
+                <h3>ფლორიდა</h3>
+            </div> 
+        </div>
+    </div>
+</section>
+<!------  Facilities---------->
+<section class="facilities"> 
+</section>
+<!-----------testomonial-------->
+<section class="testimonial">
+    <h1>რას ამბობენ ჩვენი სტუდენტები ჩვენზე</h1>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="images/user1.jpg" >
+            <div>
+                <p>სალომე  2019 წელს ჩავაბარე eduford ში მას შემდეგ პიროვნულად ძალიან გავიზარდე და ჩამოვყალიბდი ზდრასრული ადამანი</p>
+           <h3>სალომე გალდავა</h3>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star-o" ></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="images/user2.jpg" >
+            <div>
+                <p>ნიკა 2021 წელს ჩავაბარე  eduford ში ეხლა 4 კურსის სტუდენტი ვარ  უნივერსიტეტმა მომცა პიროვნული ზრდა როგორც ჩემს კარერაში ასევე პიროვნულად გაზრდაში</p>
+           <h3>ნიკა კობახიძე</h3>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star-half-o" ></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+       <!-- call to action-->
+
+<section class="cta">
+    <h1>გმადლობა რომ ეწვიეთ ჩვენს ვებსაიტს.</h1>
+    <a href="https://www.facebook.com/SUffocatee/" class="hero-btn">დაგვეკონტაქტე</a>
+</section>
+
+
+         <!-- Footer -->
+
+<section class="footer">
+    <h4>ჩვენს შესახებ</h4>
+    <p>Lსაქართველოში ყველაზე დიდი უნივერსიტეტი</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-linkedin" ></i>
+    </div>
+   <p>შექმნილია შალვა მეფარიშვილის მიერ </p>
+</section>
+
+
+
+<!-------------(header section) javascript for toggle menu---->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showmenu(){
+        navLinks.style.right = "0";
+    }
+    function hidemenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

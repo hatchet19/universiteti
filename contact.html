@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>უნივერსიტეტის ვებ საიტი</title>
+    <link rel="stylesheet" href= "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <!------ header section---->
+
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+            <li><a href="index.html">მთავარი</a></li>
+            <li><a href="about.html">ჩვენს შესახებ</a></li>
+            <li><a href="course.html">ბლოგი</a></li>
+            <li><a href="blog.html">კურსები</a></li>
+            <li><a href="contact.html">კონტაქტი</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+
+    <h1>ჩვენი კონტაქტი</h1>
+
+</section>  
+
+<!--------contact us-------->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4211.316183110713!2d44.77643197100565!3d41.72375055111277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472da6eb61735%3A0xbc7cccbfcd8248f6!2z4YOh4YOQ4YOl4YOQ4YOg4YOX4YOV4YOU4YOa4YOd4YOhIOGDo-GDnOGDmOGDleGDlOGDoOGDoeGDmOGDouGDlOGDouGDmA!5e0!3m2!1ska!2sge!4v1686621385532!5m2!1ska!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>მისამართი</h5>
+                    <p>0171, საქართველო, თბილისი, კოსტავას 77</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>ტელეფონის ნომერი;</h5>
+                    <p>(+995 32) 2 77 11 11</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>info@gtu.ge</h5>
+                    <p>მოგვწერეთ</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="">
+                <input type="text" placeholder="თქვენი სახელი" required>
+                <input type="email" placeholder="თქვენი ემაილი" required>
+                <input type="text" placeholder="დაწერეთ თემა რის შესახებ გსურთ საუბარი" required>
+                <textarea rows="8" placeholder="თემა" required></textarea>
+                <button type="Submit" class="hero-btn red-btn">თემის გაგზავნა </button>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+
+     <!-- Footer  -->
+
+<section class="footer">
+    <div class="icons">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-linkedin" ></i>
+    </div>
+   <p>შექმნილია შალვა მეფარიშვილის მიერ </p>
+</section>
+
+
+
+<!-------------(header section) javascript for toggle menu---->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showmenu(){
+        navLinks.style.right = "0";
+    }
+    function hidemenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>უნივერსიტეტის ვებ საიტი</title>
+    <link rel="stylesheet" href= "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <!------ header section---->
+
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="about.html">ჩვენს შესახებ</a></li>
+                <li><a href="course.html">ბლოგი</a></li>
+                <li><a href="blog.html">კურსები</a></li>
+                <li><a href="contact.html">კონტაქტი</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+
+    <h1>ჩვენი კურსები</h1>
+
+</section>  
+
+     <!-- Course -->
+
+<section class="course">
+    <h1>მიზანი ამართლებს საშუალებას</h1>
+    
+
+    <div class="row">
+        <div class="course-col">
+            <h3>მიზანი</h3>
+            <p>ჩვენ ხელს ვუწყობთ სტუდენტთა სოციალური პირობების გაუმჯობესებას</p>
+        </div>
+        <div class="course-col">
+            <h3>სპორტული აქტივობა</h3>
+            <p>ჩვენ ვცდილობთ ჩავრთოთ ჩვენი სტუდენტები სპორტულ აქტივებებში და მაქსიმალურად გავუჯანსღოთ გარემო</p>
+        </div>
+        <div class="course-col">
+            <h3>საკვები</h3>
+            <p>ჩვენს უნივერსიტეტში მხოლოდ ჯანსაღი საკვებია</p>
+        </div>
+    </div>
+
+</section>
+
+
+     <!--  Facilities -->
+
+<section class="facilities">
+    <h1>ჩვენ გთავაზობთ </h1>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.png" >
+            <h3>ბიბლიოთეკა</h3>
+            <p>ჩვენი უნივერსიტეტის  უზარმაზარი ბიბლიოთეკა სადაც მილიონამდე წიგნია თავმოყრილი</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/basketball.png" >
+            <h3>აქტივობები</h3>
+            <p>ჩვენი ერთერთი აქტივობა "კალაათბურთი"</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/cafeteria.png" >
+            <h3>ჩვენი სასადილო </h3>
+            <p>ჩვენი სასადილო ოთახი.</p>
+        </div>
+    </div>
+</section>
+
+
+       <!-- Footer  -->
+
+<section class="footer">
+   
+
+    <div class="icons">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-linkedin" ></i>
+    </div>
+   <p>შექმნილია შალვა მეფარიშვილის მიერ </p>
+</section>
+
+
+
+<!-------------(header section) javascript for toggle menu---->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showmenu(){
+        navLinks.style.right = "0";
+    }
+    function hidemenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
